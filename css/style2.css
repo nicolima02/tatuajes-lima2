@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/patron.png);
+	overflow: hidden;
+}
+
+.contenedorIndex{	
+	background-size: contain;
+	background-repeat: repeat;
+	grid-template-columns: 95vw 5vw;
+	grid-template-rows: 5vh 80vh 15vh;
+	grid-template-areas: "nav nav" "main botonera" "footer footer";
+}
+
+
+nav{
+	background-color:#1CB69B;
+	grid-area: nav;
+	display: flex;
+	justify-content: center;
+
+}
+
+main{
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
+	width: 100%;
+}
+
+.botonera{
+	background-color: #1CB69B;
+	width: 100%;
+	max-width: 20%;
+	font-size: 3rem;
+	grid-area: botonera;
+	height: 50vh;
+	padding: 5px;
+	list-style: none;
+	position: absolute;
+	transform: translateY(19%);
+	right: 0;
+}
+
+
+	.botonera li{
+		background-color:#17EAD9 ;
+		padding: 5px;
+		display: block;
+		position: relative;
+		left: 0;
+		text-align: center;
+		transition: all 1s;
+	}
+
+		.botonera li a{
+			text-decoration: none;
+			color: white;
+		}
+
+.flecha{
+	font-size: 1rem;
+	position: absolute;
+	left: 0;
+}
+
+
+.listaImagenes li{
+		margin-top: 1%;
+}
+
+#tatuaje1{
+	width: 45%;
+}
+
+#tatuaje2{
+	width: 45%;
+}
+
+#tatuaje3{
+	width: 45%;
+}
+
+#tatuaje4{
+	width: 45%;
+}
+
+.logo{
+	text-align: center;
+	width: 70%;
+	height: 10vh;
+}
+
+.informacion{
+	width: 100vw;
+	margin-top: 2%;
+	font-size: 0.9rem;
+	background-color: #0D80D9;
+	text-align: center;
+}
+
+.contMaps{
+	background :rgba(24,208,141, 0.5);
+}
+
+.maps{
+	display: flex;
+	justify-content: center;
+	background-color:rgba(24,208,141, 0.5) ;
+	margin-top: 2%;
+}
+
+.maps p{
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	background-color: rgba(60, 96, 130, 0.9);
+}
+
+.iframe{
+	display: flex;
+	width: 100px;
+	height: 100px;
+}
+
+footer{
+	background-color:#1CB69B ;
+	height: 12vh;
+}
+
+.redes{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.redes a{
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+}
+
+.facebookImg{
+	width: 30px;
+}
+
+.twitterImg{
+	width: 20px ;
+}
+
+.instagramImg{
+	width: 25px;
+}
+	
+.footer2{
+ overflow-y: hidden;
+}
+
+.contenedorMainContacto{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: "contacto" "mapsContacto";
+	background-color: rgba(60, 96, 130, 0.9)
+}
+
+.contacto{
+	max-width: 79vw;
+	grid-area: contacto;
+	display: flex;
+	flex-direction: column;
+	font-size: 2rem;
+	;
+}
+
+.filaContacto{
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.filaContacto p{
+	font-size: 2rem;
+}
+
+.mapsContacto{
+	display: flex;
+	flex-direction: column;
+}
+
+	.mapsContacto p{
+		font-size: 3rem;
+	}
+
+	.mapsContacto .iframe{
+		width:50%;
+		height: 400px;
+	}
+
+.turnos{
+	background-color: rgba(60, 96, 130, 0.9);
+	font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+}
+
+	.turnos form{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		max-width: 50%;
+	}
+
+	.turnos form span{
+		font-size: 3rem;
+		margin-top: 20px;
+	}
+
+.contTabla{
+	height: 80vh;
+	font-size: 3rem;
+	background-color: rgba(60, 96, 130, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+	.tabla{
+		display: flex;
+		font-size: 4rem;
+	}
+
+	table tr{
+		box-sizing: border-box;
+		outline-style: solid;
+		outline-color: black;
+		font-weight: 900;
+		background-color: white;
+	}
+		table tr td{
+			box-sizing: border-box;
+			outline-color: black;
+			outline-style: solid;
+		}
+
+.contMainEstilo{
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "realista" "acuarela" "tribal" "puntillismo";
+
+}
+
+.tribal{
+	background-color: rgba(60, 96, 130, 0.9);
+	grid-area: tribal;
+	font-size: 4rem;
+	text-decoration: underline;
+}
+
+.puntillismo{
+	background-color:rgba(24,208,141, 0.5) ;
+	font-size: 4rem;
+	grid-area: puntillismo;
+	text-decoration: underline;
+}
+
+.realista{
+	font-size: 4rem;
+	grid-area: realista;
+	background-color: rgba(60, 96, 130, 0.9);
+	text-decoration: underline;
+	display: inline-block;
+
+}
+
+#realista1{
+	width: 40%;
+}
+
+#realista2{
+	width: 40%;
+}
+
+#realista3{
+	width: 40%;
+}
+
+#tribal1{
+	width: 40%;
+}
+
+#tribal2{
+	width: 40%;
+}
+
+#tribal3{
+	width: 40%;
+}
+
+#acuarela1{
+	width: 40%;
+}
+
+#acuarela2{
+	width: 40%;
+}
+
+#acuarela3{
+	width: 40%;
+}
+
+#puntillismo3{
+	width: 40%;
+}
+
+#puntillismo1{
+	width: 40%;
+}
+
+#puntillismo2{
+	width: 40%;
+}
+
+#puntillismo3{
+	width: 40%;
+}
+
+.acuarela{
+	background-color:rgba(24,208,141, 0.5) ;
+	font-size: 4rem;
+	grid-area: acuarela;
+	text-decoration: underline;
+}
+
+.contenedorMainIndex{
+		background: rgba(24,208,141, 0.5);
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "imagenes" "info" "maps";
+	}
+
+.imagenes{
+	margin-left: 0%;
+}
+
+@media (min-width:  768px){
+	.contenedorIndex{
+		grid-template-rows: 10vh 80vh 10vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+	.contenedorMainIndex{
+		background: rgba(24,208,141, 0.5);
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas: "imagenes" "info" "maps";
+	}
+
+	.realista{
+	font-size: 4rem;
+	grid-area: realista;
+	background-color: linear-gradient(to right, rgba(60, 96, 130, 0.9), rgba(24,208,141, 0.5));
+	text-decoration: underline;
+	display: inline-block;
+	width: 100%;
+	}
+	nav{
+		position: sticky;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.logo{
+		width: 100%;
+		height: 95%;
+	}
+
+	.botonera{
+		font-size: 4rem;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		margin-right: 5px;
+		height: 100%;
+		max-width: 100%;
+		background-color: transparent;
+		padding: 0;
+	}
+	
+
+	.botonera li{
+		display: flex;
+		align-items: center;
+		align-content: center;
+		font-size: 2rem;
+		background-color:#17EAD9 ;
+		padding: 5px;
+		margin: 0;
+
+	}
+
+	.listaImagenes{
+		text-align: center;
+			
+	}
+
+	#tatuaje1{
+		width: 30%;
+	}
+
+	#tatuaje2{
+		width: 30%;
+	}
+
+	#tatuaje3{
+		width: 30%;
+	}
+
+	#tatuaje4{
+		width: 30%;
+	}
+
+	.iframe{
+		display: flex;
+		width: 300px;
+		height: 300px;
+	}
+
+	.maps p{
+		font-size: 3rem;
+	}
+
+	.informacion{
+		font-size: 2rem;
+	}
+
+	.redes a{
+		text-decoration: none;
+		font-size: 2rem;
+	}
+
+
+	.facebookImg{
+		width: 100px;
+	}
+
+	.twitterImg{
+		width: 50px ;
+	}
+
+	.instagramImg{
+		width: 100px;
+	}
+
+	.contenedorMainContacto{
+		display: grid;
+		grid-template-rows: 25vh 75vh;
+		grid-template-areas: "contacto" "mapsContacto";
+	}
+
+	.contacto{
+		max-width: 100%;
+		grid-area: contacto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 2rem;
+		background-color: rgba(60, 96, 130, 0.9);
+	}
+
+	.filaContacto{
+		display: flex;
+		align-content: center;
+
+		flex-direction: row;
+		font-size: 3rem;
+	}
+
+	.mapsContacto{
+		background-color: rgba(60, 96, 130, 0.9);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.mapsContacto p{
+			font-size: 3rem;
+		}
+
+		.mapsContacto .iframe{
+			width:300px;
+			height: 400px;
+		}
+
+	.contTabla{
+	height: 81.9vh;
+	font-size: 3rem;
+	background-color: rgba(60, 96, 130, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 100%;
+	align-items: center;
+}
+
+	.tabla{
+		display: flex;
+		justify-content: center;
+		font-size: 8rem;
+	}
+}
+
+
+@media only screen and (min-width: 1024px){
+	.contenedorIndex{
+		grid-template-rows: 10vh 80vh 10vh ;
+		grid-template-areas: "nav" "main" "footer";
+	}
+
+	.contenedorMainIndex{
+		background: rgba(24,208,141, 0.5);
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "imagenes imagenes" "info maps";
+	}
+
+	.mapsCont{
+		grid-area: maps;
+		display: flex;
+		justify-content: center;
+	}
+
+	.info{
+		grid-area: info;
+	}
+
+	.imagenes{
+		grid-area: imagenes;
+		display: flex;
+		align-items: center;
+	}
+
+	.listaImagenes{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#tatuaje1{
+		width: 60%;
+	}
+
+	#tatuaje2{
+		width: 60%;
+	}
+
+	#tatuaje3{
+		width: 60%;
+	}
+
+	#tatuaje4{
+		width: 60%;
+	}
+
+	.info{
+		display: flex;
+		align-items: center;
+	}
+
+	.informacion{
+		height: 100%;
+		width: 100%;
+	}
+
+
+	.maps{
+		display: flex;
+		flex-direction: column;
+		background: transparent;
+		justify-content: center;
+	}
+
+	.iframe{
+		width: 100%;
+		height: 100%;
+	}
+
+	.botonera li{
+		font-size: 3rem;
+	}
+
+	.redes a{
+		text-decoration: none;
+		color: white;
+		font-size: 2rem;
+	}
+	.twitterImg{
+		width: 70px;
+	}
+
+	.contenedorMainContacto{
+		display: grid;
+		grid-template-rows: 1;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "contacto mapsContacto";
+	}
+
+	.contacto{
+		max-width: 100%;
+		height: 100vh;
+		grid-area: contacto;
+		display: flex;
+		justify-content: start;
+		font-size: 2rem;
+		background-color: rgba(60, 96, 130, 0.9);
+	}
+
+	.filaContacto{
+		display: flex;
+		flex-direction: column;
+		font-size: 3rem;
+	}
+
+	.mapsContacto{
+		grid-area: mapsContacto;
+		background-color: rgba(60, 96, 130, 0.9);
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+		/*align-content: center;
+		justify-content: center;*/
+
+	}
+
+		.mapsContacto p{
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		.mapsContacto .iframe{
+			width:70%;
+			height: 90%
+		}
+
+	.contTabla{
+		height: 81.80vh;
+		font-size: 5rem;
+		background-color: rgba(60, 96, 130, 0.9);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 100%;
+	}
+
+	.tabla{
+		display: flex;
+		font-size: 12rem;
+	}
+
+	.contMainEstilos{
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "realista acuarela" "tribal puntillismo";
+		grid-row-gap: 0%;
+	}
+
+	.tribal{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: linear-gradient(to right, rgba(60, 96, 130, 0.9), rgb(24,208,141, 0.5)) ;
+		grid-area: tribal;
+		font-size: 4rem;
+		text-decoration: underline;
+	}
+
+	.puntillismo{
+		background: linear-gradient(to left, rgba(60, 96, 130, 0.9), rgb(24,208,141, 0.5)) ;
+		font-size: 4rem;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+		grid-area: puntillismo;
+		text-decoration: underline;
+	}
+
+	.realista{
+		font-size: 4rem;
+		grid-area: realista;
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+		background: linear-gradient(to right, rgba(60, 96, 130, 0.9), rgb(24,208,141, 0.5));
+		text-decoration: underline;
+	}
+	.acuarela{
+		background: linear-gradient(to left, rgba(60, 96, 130, 0.9), rgb(24,208,141, 0.5)) ;
+		font-size: 4rem;
+		grid-area: acuarela;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: underline;
+	}
+
+}
