@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../img/patron.png);
+	overflow: hidden;
+}
+
+nav{
+	background: linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77));
+}
+
+nav ul li{
+	font-size: 3rem;
+	background: #80D5A8;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: flex;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover{
+	color: white;
+}
+
+.navbar-collapse{
+	flex-grow: 0!important;
+}
+
+
+.navbar-toggler{
+	width: 40px;
+	height: 40px;
+}
+
+.navbar-toggler-icon{
+	width: 20px!important;
+	height: 20px!important;
+}
+.imagen{
+	width: 100vw;
+	height: 70vh;
+}
+
+.cont-index-info-maps{
+	display: grid;
+	grid-template-columns: 40vw 60vw;
+	grid-template-rows: 1;
+	grid-template-areas: "info-index maps-index" ;
+	background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77)10%, #279FC2);
+}
+
+.info-index{
+	display: flex;
+	align-items: center;
+}
+
+.informacion{
+	color: black;
+	font-size: 3rem;
+	text-align: center;
+}
+
+.maps{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.maps p{
+	font-size: 2rem;
+}
+
+footer{
+	background: #279FC2;
+
+}
+
+.redes{
+	display: flex;
+	justify-content: space-between;
+	font-size: 3rem;
+}
+
+.redes a{
+	color: white;
+	text-decoration: none;
+}
+
+.facebookImg{
+	width: 20%	
+}
+
+.instagramImg{
+	width: 15%;
+}
+
+.twitterImg{
+	width: 25%;
+}
+
+.separador-movil{
+	display: none;
+}
+
+.formulario-turnos{
+	background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77)10%, #279FC2)!important;
+	height: 85vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.formulario-turnos form{
+	border-radius: 30px;
+	box-shadow: 0 0 20px #59F2C5, 0 0 40px #59F2C5, 0 0 60px #59F2C5;
+	width: 50%;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #59F2C5;
+}
+
+.formulario-turnos div{
+	font-size: 4rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contTabla{
+	background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77)10%, #279FC2);
+	height: 85vh ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contTabla p{
+	color: black;
+	margin-bottom: 20px;
+	font-size: 3rem;
+}
+
+.tabla{
+	text-align: center;
+	font-size: 10rem;
+	width: 50%;
+}
+
+	table tr{
+		color: black;
+		box-sizing: border-box;
+		outline-style: solid;
+		outline-color: black;
+		font-weight: 500;
+		background-color: white;
+	}
+		table tr td{
+			box-sizing: border-box;
+			outline-color: black;
+			outline-style: solid;
+		}
+
+.contenedorMainContacto{
+	background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77)10%, #279FC2);
+	display: grid;
+	grid-template-columns: 40vw 60vw;
+	grid-template-rows: 30vh 55vh;
+	grid-template-areas: "titulo-contacto maps-contacto" "info-contacto maps-contacto";
+}
+
+.titulo-contacto{
+	grid-area: titulo-contacto;
+	font-size: 4rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	color: black;	
+}
+
+.maps-contacto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	grid-area: maps-contacto;
+}
+
+.maps-contacto p{
+	font-size: 3rem;
+	color: black;
+}
+
+.info-contacto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	grid-area: info-contacto;
+	font-size: 3rem;
+}
+
+
+.whatsapp{
+	background: #2F9D12;
+	display: flex;
+	border-radius: 30px;
+	width: 57%;
+	align-items: center;
+	justify-content: center;
+}
+
+.whatsapp img{
+	margin-left: 10px;
+}
+
+
+
+.gmail img{
+	margin-left: 10px;
+}
+
+.gmail{
+	justify-content: center;
+	width: 57%;
+	border-radius: 30px;
+	background: #D83C3C;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.info-contacto p{
+	margin-left: 30px;
+	font-size: 2rem;
+	color: white;
+}
+
+@media (max-width:  767px) and (min-width:  280px){
+	.formulario-turnos form{
+		width: 100%;
+	}
+
+	.logo{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		width: 60%!important;
+	}
+
+	.cont-index-info-maps{
+		display: block;
+	}
+
+	.informacion{
+		font-size: 2rem;
+	}
+
+	.separador-movil{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		height: 3px;
+		background: #0BE229;
+		box-shadow: 0 0 3px #0BE229, 0 0 6px #0BE229, 0 0 15px #0BE229;
+	}
+
+	.redes{
+		flex-direction: column;
+		font-size: 1.5rem;
+	}
+
+	.facebookImg{
+		transform: translateX(-10px);
+	}
+
+	.instagramImg{
+		width: 15%;
+	}
+
+	.twitterImg{
+		width: 13%;
+	}
+
+	.contenedorMainContacto{
+		display: block;
+	}
+
+	.info-contacto{
+		font-size: 2rem;
+	}
+
+	.whatsapp{
+	width: 95%;
+
+	}
+
+	.gmail{
+		width: 95%;
+		
+	}
+}
+
+
+@media (max-width:  1024px) and (min-width:  768px){
+
+	.whatsapp{
+		width: 95%;
+
+	}
+
+	.gmail{
+		width: 95%;
+		
+	}
+
+	.informacion{
+		font-size: 2rem;
+	}
+}

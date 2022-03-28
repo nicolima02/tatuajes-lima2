@@ -1,11 +1,11 @@
 /*ANIMACIONES*/
 
 .botonera li:hover{
-			background-color: #144B46;
+			background-color: #00823D;
 			transition: all 1s;
 		}
 
-@media (min-width:  768px){
+/*@media (min-width:  768px){
 	@keyframes Imgs{
 		0%{ background-image: url(../img/tatuaje.jpg)}
 		25%{ background-image: url(../img/tatuaje2.png)}
@@ -13,7 +13,7 @@
 		75%{ background-image: url(../img/tatuaje4.jpeg)}
 		100%{ background-image: url(../img/tatuaje.jpg);}
 	}
-}
+}*/
 
 .imagenes{
 	width: 100%;
@@ -24,7 +24,7 @@
 	animation-duration: 15s;
 	animation-iteration-count:infinite;
 	animation-delay: 0s;
-	margin-left: 33%;
+	/*margin-left: 33%;*/
 
 	background-size: contain;
 	background-repeat: no-repeat;

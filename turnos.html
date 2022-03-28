@@ -5,52 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pilu tattoo - tatuajes en Córdoba</title>
 	<link rel="shortcut icon" href="img/logo.jpeg">
-	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style3.css">
 	<link rel="stylesheet" href="css/animaciones.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<nav>
-		<a href="index.html">
-			<img src="img/logo.png" class="logo" alt="Pilu tatuajes">
-		</a>	
-		<ul class="botonera">
-				<li><a href="turnos.html">Turnos</a></li>
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      	<ul class="botonera navbar-nav me-auto mb-2 mb-lg-0">
+	     	 	<li><a href="turnos.html">Turnos</a></li>
 				<li><a href="precios.html">Precios</a></li>
 				<li><a href="estilos.html">Estilos</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
-		</ul>
+			</ul>
+	    </div>
+	    </div>
+	  </div>
 	</nav>
 	<main>
-		<section>	
-			<article class="turnos">
-					<h2 class="textL ">Agendar un turno</h2>
-					<form action="agenda.php" method="post"> <!--inicia formulario-->
-						<span>
-							<label for="nombre">Nombre:</label>
-							<input type="text" placeholder="Nombre...">
-						</span>
-						<span>
-							<label for="apellido">Apellido:</label>
-							<input type="text" placeholder="Apellido...">
-						</span>
-						<span>
-							<label for="mail">Email:</label>
-							<input type="Email" placeholder="Email...">
-						</span>
-						<span>
-							<label for="numero">Telefono:</label>
-							<input type="text" placeholder="Telefono....">
-						</span>
-						<span>
-							<label for="fecha">Fecha y hora:</label>
-							<input type="datetime-local">
-						</span>
-					</form>
-					<!-- cierra formulario -->
-				</fieldset>
-			</article>
+		<section class="formulario-turnos">
+			<form class="">
+			  <div class="">
+			    <label class="form-label">Nombre:</label>
+			    <input type="text" class="form-control" placeholder="Nombre...">
+			  </div>
+			  <div class="">
+			    <label class="form-label">Apellido:</label>
+			    <input type="text" class="form-control" placeholder="Apellido...">
+			  </div>
+			  <div class="">
+			    <label class="form-label">Email:</label>
+			    <input type="email" class="form-control" id="inputAddress" placeholder="Email...">
+			  </div>
+			  <div class="">
+			    <label class="form-label">Telefono:</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Telefono...">
+			  </div>
+			  <div class="">
+			    <label for="inputCity" class="form-label">Fecha y hora:</label>
+			    <input type="datetime-local" class="form-control" id="inputCity">
+			  </div>
+			</form>	
 		</section>
-		
+		</main>
 		<footer class="footer2">
 		<div class="redes">
 			<a href="https://www.facebook.com/TattooMaldito-102994115340300" target="_blank"><img src="img/facebook.png" alt="facebook" class="facebookImg">Seguinos en facebook!</a>
@@ -58,6 +60,8 @@
 			<a href="https://twitter.com/MalditoTattoo?lang=es" target="_blank"><img src="img/twitter.png" alt="twitter" class="twitterImg">Seguinos en twitter!</a>
 		</div>
 	</footer>
-	</main>
+	
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
