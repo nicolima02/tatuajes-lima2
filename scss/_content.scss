@@ -9,24 +9,29 @@ body {
   background-image: url(../img/patron.png);
   overflow: hidden; }
 
-nav {
-  background: linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77)); }
 
-nav ul li {
-  font-size: 3rem;
-  background: #80D5A8;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  display: flex; }
+nav{
+	background: linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77));
+}
 
-nav ul li a {
-  text-decoration: none;
-  color: white; }
+nav ul li{
+	font-size: 3rem;
+	background: #80D5A8;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: flex;
+}
 
-nav ul li a:hover {
-  color: white; }
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover{
+	color: white;
+}
 
 .navbar-collapse {
   flex-grow: 0 !important; }
@@ -308,25 +313,3 @@ table tr td {
     width: 95%; }
   .informacion {
     font-size: 2rem; } }
-
-.formulario-turnos {
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
-  height: 85vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
-  .formulario-turnos form {
-    border-radius: 30px;
-    box-shadow: 0 0 20px #59F2C5, 0 0 40px #59F2C5, 0 0 60px #59F2C5;
-    width: 50%;
-    padding: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    background: #59F2C5; }
-    @media (max-width: 767px) and (min-width: 280px) {
-      .formulario-turnos form {
-        width: 100%; } }
-  .formulario-turnos div {
-    font-size: 4rem;
-    margin-right: auto;
-    margin-left: auto; }

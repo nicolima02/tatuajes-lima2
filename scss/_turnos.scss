@@ -1,0 +1,22 @@
+.formulario-turnos {
+  background: $mainColor;
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+
+  form {
+  border-radius: $border;
+  box-shadow: $shadow;
+  width: $w-50;
+  padding: $p-20;
+  margin-right: auto;
+  margin-left: auto;
+  background: #59F2C5; 
+  @media (max-width: 767px) and (min-width: 280px) {
+    width: $w-100; }}
+  div {
+  font-size: 4rem;
+  margin-right: $m-auto;
+  margin-left: $m-auto; }
+}
