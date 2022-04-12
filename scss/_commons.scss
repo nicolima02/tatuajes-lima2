@@ -2,7 +2,7 @@ $mainColor:linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
 $border:30px;
 $shadow:0 0 20px #59F2C5, 0 0 40px #59F2C5, 0 0 60px #59F2C5;
 $formColor:#59F2C5;
-
+$navColor:linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77));
 
 $w-25:25%;
 $w-50:50%;
@@ -12,3 +12,17 @@ $w-100:100%;
 $p-20:20px;
 
 $m-auto:auto;
+
+@mixin padding-x($padding-right,$padding-left){
+	padding-right:$padding-right;
+	padding-left:$padding-left;
+}
+
+$jfy:(
+	'ctr' : center,
+	'spc-b' : space-between,
+	'spc-e' : space-evenly,
+	'spc-a' : space-around,
+	'start' : flex-start,
+	'end' :flex-end,
+	);
