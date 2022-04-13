@@ -1,0 +1,37 @@
+.cont-index-info-maps{
+	display: grid;
+	grid-template-columns:40vw 60vw;
+	grid-template-rows:1;
+	grid-template-areas:"info-index maps-index";
+	background: $mainColor;
+	@media (max-width: 767px) and (min-width: 280px){
+		display: block;
+	}
+}
+
+.info-index{
+	display: flex;
+	align-items:center;
+}
+
+.informacion{
+	color: black;
+	font-size: 3rem;
+	text-align: center;
+	@media (max-width: 767px) and (min-width: 280px){
+		font-size: 2rem;
+	}
+	@media (max-width: 1024px) and (min-width: 768px){
+		font-size: 2rem;
+	}
+}
+
+.maps{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	p{
+		font-size: 2rem;
+	}
+}
+

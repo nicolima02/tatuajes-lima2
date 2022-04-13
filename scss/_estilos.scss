@@ -1,0 +1,94 @@
+.contMainEstilos{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-template-rows: repeat(2, 1fr);
+  	grid-template-areas: "realista acuarela" "tribal puntillismo";
+  	h2{
+  		font-size: 3rem;
+  		color: black;
+  		text-decoration:underline;
+  	}
+    @media (max-width: 767px) and (min-width: 280px) {
+      display: block;
+    }
+}
+
+.realista{
+	background:$mainColorWD;
+	grid-area:realista;
+  @media (max-width: 767px) and (min-width: 280px) {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+  }
+}
+
+#realista1 {
+  width: $w-50; 
+}
+
+#realista2 {
+  width: $w-50; 
+}
+
+#realista3 {
+  width: $w-50; 
+}
+
+.acuarela {
+  grid-area: acuarela;
+  background: $mainColorWD; 
+  @media (max-width: 767px) and (min-width: 280px) {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+  }
+}
+
+#acuarela1 {
+  width: $w-50; }
+
+#acuarela2 {
+  width: $w-50; }
+
+#acuarela3 {
+  width: $w-50; }
+
+.tribal {
+  background: $mainColor;
+  grid-area: tribal; 
+  @media (max-width: 767px) and (min-width: 280px) {
+    background:$mainColorWD;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+  }
+}
+
+#tribal1 {
+  width: $w-50; }
+
+#tribal2 {
+  width: $w-50; }
+
+#tribal3 {
+  width: $w-50; }
+
+.puntillismo {
+  background: $mainColor;
+  grid-area: puntillismo; 
+  @media (max-width: 767px) and (min-width: 280px) {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+  }
+}
+
+#puntillismo1 {
+  width: $w-50; }
+
+#puntillismo2 {
+  width: $w-50; }
+
+#puntillismo3 {
+  width: $w-50; }

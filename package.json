@@ -1,7 +1,7 @@
 {
-  "name": "tatuajes-lima-github----copia",
+  "name": "Tatuajes-Lima",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web destinado a brindar informacion sobre el servicio de realizacion de tatuajes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

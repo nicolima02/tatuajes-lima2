@@ -9,274 +9,27 @@ body {
   background-image: url(../img/patron.png);
   overflow: hidden; }
 
-.cont-index-info-maps {
-  display: grid;
-  grid-template-columns: 40vw 60vw;
-  grid-template-rows: 1;
-  grid-template-areas: "info-index maps-index";
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2); }
-
-.info-index {
-  display: flex;
-  align-items: center; }
-
-.informacion {
-  color: black;
-  font-size: 3rem;
-  text-align: center; }
-
-.maps {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.maps p {
-  font-size: 2rem; }
-
 .displayFlex, nav ul li {
   display: flex; }
 
-footer {
-  background: #279FC2; }
-
-.redes {
-  display: flex;
-  justify-content: space-between;
-  font-size: 3rem; }
-
-.redes a {
-  color: white;
-  text-decoration: none; }
-
-.facebookImg {
-  width: 20%; }
-
-.instagramImg {
-  width: 15%; }
-
-.twitterImg {
-  width: 25%; }
-
 .separador-movil {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 3px;
+  background: #0BE229;
+  box-shadow: 0 0 3px #0BE229, 0 0 6px #0BE229, 0 0 15px #0BE229;
   display: none; }
-
-.contTabla {
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.contTabla p {
-  color: black;
-  margin-bottom: 20px;
-  font-size: 3rem; }
-
-.tabla {
-  text-align: center;
-  font-size: 10rem;
-  width: 50%; }
-
-table tr {
-  color: black;
-  box-sizing: border-box;
-  outline-style: solid;
-  outline-color: black;
-  font-weight: 500;
-  background-color: white; }
-
-table tr td {
-  box-sizing: border-box;
-  outline-color: black;
-  outline-style: solid; }
-
-.contenedorMainContacto {
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
-  display: grid;
-  grid-template-columns: 40vw 60vw;
-  grid-template-rows: 30vh 55vh;
-  grid-template-areas: "titulo-contacto maps-contacto" "info-contacto maps-contacto"; }
-
-.titulo-contacto {
-  grid-area: titulo-contacto;
-  font-size: 4rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  color: black; }
-
-.maps-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  grid-area: maps-contacto; }
-
-.maps-contacto p {
-  font-size: 3rem;
-  color: black; }
-
-.info-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  grid-area: info-contacto;
-  font-size: 3rem; }
-
-.whatsapp {
-  background: #2F9D12;
-  display: flex;
-  border-radius: 30px;
-  width: 57%;
-  align-items: center;
-  justify-content: center; }
-
-.whatsapp img {
-  margin-left: 10px; }
-
-.gmail img {
-  margin-left: 10px; }
-
-.gmail {
-  justify-content: center;
-  width: 57%;
-  border-radius: 30px;
-  background: #D83C3C;
-  margin-top: 40px;
-  display: flex;
-  align-items: center; }
-
-.info-contacto p {
-  margin-left: 30px;
-  font-size: 2rem;
-  color: white; }
-
-.contMainEstilos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "realista acuarela" "tribal puntillismo"; }
-
-.contMainEstilos h2 {
-  font-size: 3rem;
-  color: black;
-  text-decoration: underline; }
-
-.realista {
-  background: rgba(2, 203, 97, 0.77);
-  grid-area: realista; }
-
-#realista1 {
-  width: 50%; }
-
-#realista2 {
-  width: 50%; }
-
-#realista3 {
-  width: 50%; }
-
-.acuarela {
-  grid-area: acuarela;
-  background: rgba(2, 203, 97, 0.77); }
-
-#acuarela1 {
-  width: 50%; }
-
-#acuarela2 {
-  width: 50%; }
-
-#acuarela3 {
-  width: 50%; }
-
-.tribal {
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
-  grid-area: tribal; }
-
-#tribal1 {
-  width: 50%; }
-
-#tribal2 {
-  width: 50%; }
-
-#tribal3 {
-  width: 50%; }
-
-.puntillismo {
-  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
-  grid-area: puntillismo; }
-
-#puntillismo1 {
-  width: 50%; }
-
-#puntillismo2 {
-  width: 50%; }
-
-#puntillismo3 {
-  width: 50%; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .separador-movil {
+      display: block; } }
 
 @media (max-width: 767px) and (min-width: 280px) {
   .logo {
-    width: 100%; }
-  .navbar-brand {
-    width: 60% !important; }
-  .cont-index-info-maps {
-    display: block; }
-  .informacion {
-    font-size: 2rem; }
-  .separador-movil {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 3px;
-    background: #0BE229;
-    box-shadow: 0 0 3px #0BE229, 0 0 6px #0BE229, 0 0 15px #0BE229; }
-  .redes {
-    flex-direction: column;
-    font-size: 1.5rem; }
-  .facebookImg {
-    transform: translateX(-10px); }
-  .instagramImg {
-    width: 15%; }
-  .twitterImg {
-    width: 13%; }
-  .contenedorMainContacto {
-    display: block; }
-  .info-contacto {
-    font-size: 2rem; }
-  .whatsapp {
-    width: 95%; }
-  .gmail {
-    width: 95%; }
-  .contMainEstilos {
-    display: block; }
-  .realista {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .acuarela {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .tribal {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .puntillismo {
-    display: flex;
-    align-items: center;
-    flex-direction: column; } }
-
-@media (max-width: 1024px) and (min-width: 768px) {
-  .whatsapp {
-    width: 95%; }
-  .gmail {
-    width: 95%; }
-  .informacion {
-    font-size: 2rem; } }
+    width: 100%; } }
 
 nav {
   background: linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77)); }
@@ -308,6 +61,43 @@ nav {
   width: 100vw;
   height: 70vh; }
 
+@media (max-width: 767px) and (min-width: 280px) {
+  .navbar-brand {
+    width: 60% !important; } }
+
+footer {
+  background: #279FC2; }
+
+.redes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .redes {
+      flex-direction: column;
+      font-size: 1.5rem; } }
+  .redes a {
+    color: white;
+    text-decoration: none; }
+
+.facebookImg {
+  width: 20%; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .facebookImg {
+      transform: translateX(-10px); } }
+
+.instagramImg {
+  width: 15%; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .instagramImg {
+      width: 15%; } }
+
+.twitterImg {
+  width: 25%; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .twitterImg {
+      width: 13%; } }
+
 .formulario-turnos {
   background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
   height: 85vh;
@@ -329,3 +119,216 @@ nav {
     font-size: 4rem;
     margin-right: auto;
     margin-left: auto; }
+
+.cont-index-info-maps {
+  display: grid;
+  grid-template-columns: 40vw 60vw;
+  grid-template-rows: 1;
+  grid-template-areas: "info-index maps-index";
+  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2); }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .cont-index-info-maps {
+      display: block; } }
+
+.info-index {
+  display: flex;
+  align-items: center; }
+
+.informacion {
+  color: black;
+  font-size: 3rem;
+  text-align: center; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .informacion {
+      font-size: 2rem; } }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .informacion {
+      font-size: 2rem; } }
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .maps p {
+    font-size: 2rem; }
+
+.contTabla {
+  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contTabla p {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 3rem; }
+
+.tabla {
+  text-align: center;
+  font-size: 10rem;
+  width: 50%; }
+
+table tr {
+  color: black;
+  box-sizing: border-box;
+  outline-style: solid;
+  outline-color: black;
+  font-weight: 500;
+  background: white; }
+  table tr td {
+    box-sizing: border-box;
+    outline-color: black;
+    outline-style: solid; }
+
+.contMainEstilos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "realista acuarela" "tribal puntillismo"; }
+  .contMainEstilos h2 {
+    font-size: 3rem;
+    color: black;
+    text-decoration: underline; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .contMainEstilos {
+      display: block; } }
+
+.realista {
+  background: rgba(2, 203, 97, 0.77);
+  grid-area: realista; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .realista {
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
+
+#realista1 {
+  width: 50%; }
+
+#realista2 {
+  width: 50%; }
+
+#realista3 {
+  width: 50%; }
+
+.acuarela {
+  grid-area: acuarela;
+  background: rgba(2, 203, 97, 0.77); }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .acuarela {
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
+
+#acuarela1 {
+  width: 50%; }
+
+#acuarela2 {
+  width: 50%; }
+
+#acuarela3 {
+  width: 50%; }
+
+.tribal {
+  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
+  grid-area: tribal; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .tribal {
+      background: rgba(2, 203, 97, 0.77);
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
+
+#tribal1 {
+  width: 50%; }
+
+#tribal2 {
+  width: 50%; }
+
+#tribal3 {
+  width: 50%; }
+
+.puntillismo {
+  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
+  grid-area: puntillismo; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .puntillismo {
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
+
+#puntillismo1 {
+  width: 50%; }
+
+#puntillismo2 {
+  width: 50%; }
+
+#puntillismo3 {
+  width: 50%; }
+
+.contenedorMainContacto {
+  background: linear-gradient(to bottom, rgba(2, 203, 97, 0.77) 10%, #279FC2);
+  display: grid;
+  grid-template-columns: 40vw 60vw;
+  grid-template-rows: 30vh 55vh;
+  grid-template-areas: "titulo-contacto maps-contacto" "info-contacto maps-contacto"; }
+
+.titulo-contacto {
+  grid-area: titulo-contacto;
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: black; }
+  @media (max-width: 767px) and (min-width: 280px) {
+    .titulo-contacto {
+      font-size: 2.5rem; } }
+
+.maps-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: maps-contacto; }
+  .maps-contacto p {
+    font-size: 3rem;
+    color: black; }
+
+.info-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: info-contacto;
+  font-size: 3rem; }
+  .info-contacto p {
+    margin-left: 30px;
+    font-size: 2rem;
+    color: white; }
+
+.whatsapp {
+  background: #2F9D12;
+  display: flex;
+  border-radius: 30px;
+  width: 57%;
+  align-items: center;
+  justify-content: center; }
+  .whatsapp img {
+    margin-left: 10px; }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .whatsapp {
+      width: 95%; } }
+
+.gmail {
+  justify-content: center;
+  width: 57%;
+  border-radius: 30px;
+  background: #D83C3C;
+  margin-top: 40px;
+  display: flex;
+  align-items: center; }
+  .gmail img {
+    margin-left: 10px; }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .gmail {
+      width: 95%; } }

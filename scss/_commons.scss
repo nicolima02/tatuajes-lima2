@@ -3,6 +3,8 @@ $border:30px;
 $shadow:0 0 20px #59F2C5, 0 0 40px #59F2C5, 0 0 60px #59F2C5;
 $formColor:#59F2C5;
 $navColor:linear-gradient(to bottom, #25BB9D 80%, rgba(2, 203, 97, 0.77));
+$footColor:#279FC2;
+$mainColorWD:rgba(2, 203, 97, 0.77);
 
 $w-25:25%;
 $w-50:50%;
@@ -26,3 +28,15 @@ $jfy:(
 	'start' : flex-start,
 	'end' :flex-end,
 	);
+
+@mixin separador-movil($color){
+	margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 3px;
+    background: $color;
+    box-shadow: 0 0 3px $color, 0 0 6px $color, 0 0 15px $color; 
+}
