@@ -26,7 +26,11 @@
   grid-area: maps-contacto;
   p{
   font-size: 3rem;
-  color: black; } 
+  color: black; 
+  @media (max-width: 767px) and (min-width: 280px){
+    font-size: 2rem;} 
+
+  }
 }
 
 
@@ -42,6 +46,10 @@
     margin-left: 30px;
     font-size: 2rem;
     color: white;
+    @media (max-width: 767px) and (min-width: 280px){
+      font-size: 1rem;
+      margin-left: 0;
+    }
   }
 }
 
@@ -58,6 +66,10 @@
   @media (max-width: 1024px) and (min-width: 768px){
     width: 95%;
   }
+  @media (max-width: 767px) and (min-width: 280px){
+    flex-direction: column;
+    width: 90%;
+  }
 }
 
 .gmail {
@@ -73,6 +85,10 @@
   }
   @media (max-width: 1024px) and (min-width: 768px){
     width: 95%;
+  }
+  @media (max-width: 767px) and (min-width: 280px){
+    flex-direction: column;
+    width: 90%;
   }
 }
 

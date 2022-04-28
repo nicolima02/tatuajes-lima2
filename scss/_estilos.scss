@@ -1,8 +1,5 @@
 .contMainEstilos{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-  	grid-template-rows: repeat(2, 1fr);
-  	grid-template-areas: "realista acuarela" "tribal puntillismo";
+	display: block;
   	h2{
   		font-size: 3rem;
   		color: black;
@@ -54,8 +51,8 @@
 #acuarela3 {
   width: $w-50; }
 
-.tribal {
-  background: $mainColor;
+.tribal { 
+  background: $mainColorWD;
   grid-area: tribal; 
   @media (max-width: 767px) and (min-width: 280px) {
     background:$mainColorWD;
@@ -92,3 +89,4 @@
 
 #puntillismo3 {
   width: $w-50; }
+

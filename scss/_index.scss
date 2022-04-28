@@ -15,9 +15,12 @@
 }
 
 .informacion{
+	width: 80%;
+	margin-left: $m-auto;
+	margin-right: $m-auto;
 	color: black;
 	font-size: 3rem;
-	text-align: center;
+	text-align: justify;
 	@media (max-width: 767px) and (min-width: 280px){
 		font-size: 2rem;
 	}
@@ -30,8 +33,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items:center;
+	margin-bottom: 20px;
 	p{
+		margin-top: 20px;
 		font-size: 2rem;
 	}
+
 }
 
+.carousel-index{
+	width: 50%;
+	height: 70vh;
+	@media (max-width: 767px) and (min-width: 280px){
+		width: 100vw;
+	}
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imagen {
+	height: 70vh;
+	width: 100%;
+  @media (max-width: 767px) and (min-width: 280px) {
+    .imagen {
+      width: 100vw; } }
+     }
+
+.imagenes-index{
+	background:$mainColorWD;
+}
