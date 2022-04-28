@@ -205,9 +205,6 @@ table tr {
     font-size: 3rem;
     color: black;
     text-decoration: underline; }
-  @media (max-width: 767px) and (min-width: 280px) {
-    .contMainEstilos {
-      display: block; } }
 
 .realista {
   background: #A6E6C4;
